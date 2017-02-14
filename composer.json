@@ -1,0 +1,27 @@
+{
+  "name": "dominikangerer/php-easy-client",
+  "description": "DominikAngerer - Client to easily fetch and cache data",
+  "type": "library",
+  "keywords": [
+    "client",
+    "cache",
+    "http"
+  ],
+  "license": "MIT",
+  "minimum-stability": "dev",
+  "require": {
+    "guzzlehttp/guzzle": "^6.2",
+    "apix/cache": "^1.2"
+  },
+  "authors": [
+    {
+      "name": "Dominik Angerer",
+      "email": "dominikangerer1@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-0": {
+      "DominikAngerer": "src"
+    }
+  }
+}
