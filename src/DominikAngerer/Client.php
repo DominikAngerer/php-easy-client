@@ -128,7 +128,7 @@ class Client
             // var_dump($data);
             $interpretedResponseData = (array) json_decode($data, true);
             if(count($interpretedResponseData) == 0) {
-                $interpretedResponseData = (array) json_decode(json_encode(simplexml_load_string($data)));
+                $interpretedResponseData = (array) json_decode(json_encode(@simplexml_load_string($data)));
             }
             $result = new \stdClass();
             // return response data as json if possible, raw if not
