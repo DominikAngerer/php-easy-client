@@ -1,12 +1,12 @@
 <?php
 require '../vendor/autoload.php';
 
-$client = new \DominikAngerer\Client('https://raw.githubusercontent.com'); //
+$client = new \DominikAngerer\Client('https://raw.githubusercontent.com');
 
 // Optionally set a cache
 $client->setCache('filesytem', array('path' => 'cache'));
 
-// Get the story as array
+// execute a get Request and get the Body
 $client->get('/DominikAngerer/default-datasources/master/country-iso2.json', array('time' => time()));
 $data = $client->getBody();
 
@@ -19,7 +19,7 @@ var_dump($data);
 echo '	</pre>';
 echo '<hr>';
 
-// Get the story headers
+// access the headers
 $headers = $client->getHeaders();
 
 echo '<h2> $client->getHeaders </h2>
