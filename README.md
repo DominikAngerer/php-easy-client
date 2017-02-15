@@ -4,7 +4,7 @@ Allow GET and POST Request from Guzzle combined with the caching from APIX
 ## Install
 
 ```
-composer install dominikangerer/php-easy-client
+composer require dominikangerer/php-easy-client
 ```
 ## How to use
 
